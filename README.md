@@ -1,6 +1,10 @@
-## Welcome to GitHub Pages
+## Understanding Contextualised word embeddings
 
-You can use the [editor on GitHub](https://github.com/skepticalbayes/TextSemantics/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+We had a breakthrough moment in NLP with **universal word embeddings using GLOVE and word2vec** which understood universal semanitcs but we can't account for linguistic **polysemy**, ie. the word "back" has different semantics(meaning) "my back hurts" and "going back outdoors for a jog".
+
+We countered this issue with the contextualised embeddings (BERT and elmo being major implementations of this abstract notion), and we further scaled this idea to form embeddings for variable length sentences/ phrases which captured the context of the text.
+
+We will explore how these embeddings make sense by visualising some phrases on the 2D cartesian plane.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
