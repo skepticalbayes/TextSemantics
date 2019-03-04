@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Keyword Graph</title>
+    <link rel="stylesheet" type="text/css" href="docs/css/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="docs/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="docs/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="docs/css/daterangepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="docs/css/dashboard.css" />
+    <link rel="stylesheet" href="docs/css/bootstrap-multiselect.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="docs/css/graph.css"/>
+    <script type="text/javascript" src="docs/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="docs/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="docs/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="docs/js/moment.js"></script>
+    <script type="text/javascript" src="docs/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="docs/js/daterangepicker.js"></script>
+    <script type="text/javascript" src="docs/js/blockUI.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="docs/js/pym.min.js"></script>
+    <script type="text/javascript" src="docs/js/data.json"></script>
+</head>
+<body>
+    <div>
+      <div class="col-lg-7" id="svg-container">
+          <svg id="viz" align="center">
+          </svg>
+          <div id = "legend" class="col-sm-3" style="padding-right: 0px; padding-left: 0px;">
+              <div class="legendTitle" style="font-size: 12px;">Keyword</div>
+              <div class="legendText" style="font-size: 11px; color: #BABABA;">click to select a keyword</div>
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="docs/js/graph.js"></script>
+</body>
+</html>
