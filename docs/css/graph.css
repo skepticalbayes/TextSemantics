@@ -32,6 +32,10 @@ html, body {
     right:0;
 }
 
+#legend svg{
+    height:500px;
+}
+
 .legendCircle {
     stroke-width:1;
     stroke:#999;
