@@ -1,0 +1,83 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #525252;
+  text-align: center;
+}
+
+html, body {
+    width:auto;
+    height:auto;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #B3B3B3;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 10px;
+    fill: #6B6B6B;
+}
+
+.popover {
+    pointer-events: none;
+}
+
+#legend{
+    position:fixed;
+    top:60px;
+    right:0;
+}
+
+.legendCircle {
+    stroke-width:1;
+    stroke:#999;
+    stroke-dasharray:2 2;
+    fill:none;
+}
+
+.legendLine {
+    stroke-width: 1;
+    stroke: #D1D1D1;
+    shape-rendering: crispEdges;
+}
+
+.legendTitle {
+    fill: #1A1A1A;
+    color: #1A1A1A;
+    text-anchor: middle;
+    font-size: 10px;
+}
+
+.legendText {
+    fill: #949494;
+    text-anchor: start;
+    font-size: 9px;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #efefef;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+@media (min-width: 500px) {
+  .col-sm-3, .col-sm-9 {
+    float: left;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+}
