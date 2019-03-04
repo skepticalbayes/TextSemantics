@@ -325,7 +325,7 @@ $(document).ready(function(){
             });
         var	legendMargin = {left: 5, top: 10, right: 5, bottom: 10},
         legendWidth = 145,
-        legendHeight = 270;
+        legendHeight = 490;
 
         var svgLegend = d3.select("#legend").style('fill', 'none').append("svg")
                     .attr("width", (legendWidth + legendMargin.left + legendMargin.right))
