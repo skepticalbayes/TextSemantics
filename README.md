@@ -6,7 +6,7 @@ We countered this issue with the contextualised embeddings (BERT and elmo being 
 
 We will explore how these embeddings make sense by visualising some phrases on the 2D cartesian plane.
 
-Below is a keyword graph of medical terms; built using **d3.js**. You can zoom on the graph by
+https://skepticalbayes.github.io/TextSemantics/ has a keyword graph of medical terms; built using **d3.js**. You can zoom on the graph by
 double clicking and explore most closely relevant terms by clicking on that term in the legend.
 
 The code to prepare is present in graph.js, static code is present in static folder in js, css, html.
