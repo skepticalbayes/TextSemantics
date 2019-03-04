@@ -6,36 +6,46 @@ We countered this issue with the contextualised embeddings (BERT and elmo being 
 
 We will explore how these embeddings make sense by visualising some phrases on the 2D cartesian plane.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Below is a keyword graph of medical terms; built using **d3.js**. You can zoom on the graph by
+double clicking and explore most closely relevant terms by clicking on that term in the legend.
 
-### Markdown
+The code to prepare is present in graph.js, static code is present in static folder in js, css, html.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/skepticalbayes/TextSemantics/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Keyword Graph</title>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/daterangepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/bootstrap-multiselect.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="../css/graph.css"/>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="../js/daterangepicker.js"></script>
+    <script type="text/javascript" src="../js/blockUI.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="../js/pym.min.js"></script>
+    <script type="text/javascript" src="../js/data.json"></script>
+</head>
+<body>
+    <div>
+      <div class="col-lg-7" id="svg-container">
+          <svg id="viz" align="center">
+          </svg>
+          <div id = "legend" class="col-sm-3" style="padding-right: 0px; padding-left: 0px;">
+              <div class="legendTitle" style="font-size: 12px;">Keyword</div>
+              <div class="legendText" style="font-size: 11px; color: #BABABA;">click to select a keyword</div>
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/graph.js"></script>
+</body>
+</html>
