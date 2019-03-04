@@ -12,6 +12,9 @@ double clicking and explore most closely relevant terms by clicking on that term
 The code to prepare is present in graph.js, static code is present in static folder in js, css, html.
 
 Text semantics can have multiple use cases:
-#Contextual word embeddings for language models for transfer learning in various supervised training tasks.#
-#Semantic search on proprietary corpus for free text search feed.#
-#Unsupervised tasks using sentence embeddings like clustering/text rankings.#
+
+#Contextual word embeddings for language models for transfer learning in various supervised training tasks.
+
+#Semantic search on proprietary corpus for free text search feed.
+
+#Unsupervised tasks using sentence embeddings like clustering/text rankings.
